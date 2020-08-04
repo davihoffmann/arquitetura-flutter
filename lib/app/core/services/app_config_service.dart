@@ -1,4 +1,5 @@
-import 'package:arquitetura_flutter/app/interfaces/app_config_interface.dart';
+
+import 'package:arquitetura_flutter/app/core/interfaces/app_config_interface.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppConfigService implements AppConfigInterface {

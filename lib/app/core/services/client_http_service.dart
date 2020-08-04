@@ -1,4 +1,5 @@
-import 'package:arquitetura_flutter/app/interfaces/client_http_interface.dart';
+
+import 'package:arquitetura_flutter/app/core/interfaces/client_http_interface.dart';
 import 'package:dio/dio.dart';
 
 class ClientHttpService implements ClientHttpInterface {

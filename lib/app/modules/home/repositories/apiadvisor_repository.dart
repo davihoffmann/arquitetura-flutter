@@ -1,6 +1,7 @@
-import 'package:arquitetura_flutter/app/interfaces/apiadvisor_interface.dart';
-import 'package:arquitetura_flutter/app/interfaces/client_http_interface.dart';
-import 'package:arquitetura_flutter/app/models/apiadvisor_model.dart';
+
+import 'package:arquitetura_flutter/app/core/interfaces/apiadvisor_interface.dart';
+import 'package:arquitetura_flutter/app/core/interfaces/client_http_interface.dart';
+import 'package:arquitetura_flutter/app/modules/home/models/apiadvisor_model.dart';
 
 class ApiadvisorRepository implements ApiAdvisorInterface {
 

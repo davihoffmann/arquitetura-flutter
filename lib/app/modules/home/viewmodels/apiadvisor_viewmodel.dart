@@ -1,5 +1,6 @@
-import 'package:arquitetura_flutter/app/interfaces/apiadvisor_interface.dart';
-import 'package:arquitetura_flutter/app/models/apiadvisor_model.dart';
+
+import 'package:arquitetura_flutter/app/core/interfaces/apiadvisor_interface.dart';
+import 'package:arquitetura_flutter/app/modules/home/models/apiadvisor_model.dart';
 import 'package:flutter/material.dart';
 
 class ApiadvisorViewModel {

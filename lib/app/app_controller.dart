@@ -1,4 +1,5 @@
-import 'package:arquitetura_flutter/app/viewmodels/change_theme_viewmodel.dart';
+
+import 'package:arquitetura_flutter/app/core/viewmodels/change_theme_viewmodel.dart';
 import 'package:flutter/material.dart';
 
 class AppController {

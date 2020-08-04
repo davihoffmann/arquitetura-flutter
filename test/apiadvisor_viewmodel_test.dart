@@ -1,7 +1,8 @@
 import 'package:arquitetura_flutter/app/app_module.dart';
-import 'package:arquitetura_flutter/app/interfaces/client_http_interface.dart';
-import 'package:arquitetura_flutter/app/models/apiadvisor_model.dart';
-import 'package:arquitetura_flutter/app/viewmodels/apiadvisor_viewmodel.dart';
+import 'package:arquitetura_flutter/app/core/interfaces/client_http_interface.dart';
+import 'package:arquitetura_flutter/app/modules/home/home_module.dart';
+import 'package:arquitetura_flutter/app/modules/home/models/apiadvisor_model.dart';
+import 'package:arquitetura_flutter/app/modules/home/viewmodels/apiadvisor_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
@@ -18,6 +19,9 @@ main() {
   initModule(AppModule(), changeBinds: [
     Bind<ClientHttpInterface>((i) => ClientHttpMock()),
   ]);
+
+  initModule(HomeModule());
+
   group('ApiAdvisorViewModel', () {
     test('ApiAdvisorViewModel Error', () async {
       when(Modular.get<ClientHttpInterface>().get(

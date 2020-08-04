@@ -1,5 +1,7 @@
-import 'package:arquitetura_flutter/app/interfaces/app_config_interface.dart';
-import 'package:arquitetura_flutter/app/models/app_config_model.dart';
+
+
+import 'package:arquitetura_flutter/app/core/interfaces/app_config_interface.dart';
+import 'package:arquitetura_flutter/app/core/models/app_config_model.dart';
 
 class ChangeThemeViewModel {
 
