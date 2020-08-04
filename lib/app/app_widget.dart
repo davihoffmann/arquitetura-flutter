@@ -17,7 +17,9 @@ class AppWidget extends StatelessWidget {
             visualDensity: VisualDensity.adaptivePlatformDensity,
             brightness: isDark ? Brightness.dark : Brightness.light
           ),
-          home: HomePage(),
+          initialRoute: '/',
+          onGenerateRoute: Modular.generateRoute,
+          navigatorKey: Modular.navigatorKey,
         );
       },
     );

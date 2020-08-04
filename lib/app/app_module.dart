@@ -4,6 +4,8 @@ import 'package:arquitetura_flutter/app/interfaces/apiadvisor_interface.dart';
 import 'package:arquitetura_flutter/app/interfaces/app_config_interface.dart';
 import 'package:arquitetura_flutter/app/interfaces/client_http_interface.dart';
 import 'package:arquitetura_flutter/app/pages/home/home_controller.dart';
+import 'package:arquitetura_flutter/app/pages/home/home_page.dart';
+import 'package:arquitetura_flutter/app/pages/login/login_page.dart';
 import 'package:arquitetura_flutter/app/repositories/apiadvisor_repository.dart';
 import 'package:arquitetura_flutter/app/services/app_config_service.dart';
 import 'package:arquitetura_flutter/app/services/client_http_service.dart';
@@ -31,6 +33,9 @@ class AppModule extends MainModule {
   Widget get bootstrap => AppWidget();
 
   @override
-  List<Router> get routers => null;
+  List<Router> get routers => [
+    Router('/', child: (context, args) => LoginPage()),
+    Router('/home', child: (context, args) => HomePage()),
+  ];
 
 }
