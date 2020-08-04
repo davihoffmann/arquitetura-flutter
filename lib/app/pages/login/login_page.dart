@@ -37,7 +37,8 @@ class _LoginPageState extends State<LoginPage> {
             RaisedButton(
               onPressed: () {
                 // Navigator.of(context).pushReplacementNamed('/home');
-                Modular.to.pushReplacementNamed('/home');
+                var idPessoa = "2455";
+                Modular.to.pushReplacementNamed('/home', arguments: idPessoa);
               },
               child: Text("Login"),
             )

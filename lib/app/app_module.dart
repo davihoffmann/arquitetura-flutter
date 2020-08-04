@@ -35,7 +35,9 @@ class AppModule extends MainModule {
   @override
   List<Router> get routers => [
     Router('/', child: (context, args) => LoginPage()),
-    Router('/home', child: (context, args) => HomePage()),
+    Router('/home', child: (context, args) { 
+      return HomePage(args.data);
+    }),
   ];
 
 }

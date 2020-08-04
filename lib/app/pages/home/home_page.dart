@@ -5,6 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class HomePage extends StatefulWidget {
+  final String idPessoa;
+
+  HomePage(this.idPessoa) {
+    print(idPessoa);
+  }
+
   @override
   _HomePageState createState() => _HomePageState();
 }
